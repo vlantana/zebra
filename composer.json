@@ -1,0 +1,30 @@
+{
+	"name": "vlantana/zebra",
+	"description": "Simplified ZPL Builder and Client",
+	"keywords": ["vlantana", "zebra"],
+	"license": "proprietary",
+	"type": "project",
+	"authors": [
+		{
+			"name": "Vitalij Ivanov",
+			"email": "vitalij.ivanov@vlantana.lt",
+			"role": "Lead Developer"
+		},
+		{
+			"name": "Ivan Griscenko",
+			"email": "ivan.griscenko@vlantana.lt",
+			"role": "Supervisor"
+		}
+	],
+	"require-dev": {
+		"phpspec/phpspec": "~2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Zebra\\": "src/"
+		}
+	},
+	"scripts": {
+		"test": "phpspec --ansi run"
+	}
+}
