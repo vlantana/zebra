@@ -41,9 +41,9 @@ class Builder
         'end' => '^XZ',
     ];
     
-    public function __construct($top = 20)
+    public function __construct($top = 20, $left = 0)
     {
-        $this->zpl = "^LT$top";
+        $this->zpl = "^LT$top^LS$left";
     }
     
     /**
