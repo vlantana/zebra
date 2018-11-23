@@ -41,6 +41,14 @@ class Builder
         'end' => '^XZ',
     ];
     
+    /**
+     * Builder constructor.
+     *
+     * @param int $width Label width
+     * @param int $height Label height
+     * @param int $top Label shift from the top
+     * @param int $left Label shift from the left
+     */
     public function __construct($width, $height, $top = 0, $left = 0)
     {
         $this->zpl = "^PW$width,LL$height^LT$top^LS$left";
