@@ -48,10 +48,11 @@ class Builder
      * @param int $height Label height
      * @param int $top Label shift from the top
      * @param int $left Label shift from the left
+     * @param int $darkness Ink darkness setting
      */
-    public function __construct($width, $height, $top = 0, $left = 0)
+    public function __construct($width, $height, $top = 0, $left = 0, $darkness = 20)
     {
-        $this->zpl = "^PW$width,LL$height^LT$top^LS$left";
+        $this->zpl = "^PW$width,LL$height^LT$top^LS$left~SD$darkness";
     }
     
     /**
